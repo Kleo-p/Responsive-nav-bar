@@ -1,0 +1,102 @@
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+nav {
+  background-color: rgb(237, 241, 241);
+}
+nav .content {
+  color: rgb(112, 109, 112);
+}
+nav .content ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2.5%;
+  padding: 0.7rem;
+}
+nav .content ul li {
+  justify-content: end;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+nav .content ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.nav .Ncontent ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.click {
+  display: none;
+}
+button{
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  border-radius: 3px;
+  box-shadow: 2px 1px 3px 1px rgb(184, 14, 218);
+  height: 25px;
+}
+.show {
+  transform: translateX(-190px);
+}
+.rest {
+  position: absolute;
+  top: 30px;
+  text-transform: uppercase;
+  color: blue;
+  width: 70%;
+  cursor: default;
+}
+.nav {
+  color: rgb(77, 40, 177);
+  font-size: 1.1rem;
+  font-weight: 700px;
+  font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: absolute;
+  height: 60vh;
+  top: 0px;
+  right: -190px;
+  background-color: rgb(193, 235, 235);
+  transition: 1s;
+}
+.nav .Ncontent ul {
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    margin: 0 1.5%;
+    padding: 20px;
+  }
+
+  .nav .Ncontent ul li {
+    margin: 10px 1px;
+    padding: 0.7rem;
+  }
+
+
+@media only screen and (max-width: 670px) {
+  nav {
+    display: none;
+  }
+  /* .nav {
+    position: absolute;
+    height: 60vh;
+    top: 0px;
+    right: -190px;
+    background-color: rgb(44, 226, 226);
+    transition: 1s;
+  } */
+  
+  .click {
+    display: inherit;
+    position: absolute;
+    top: 1.5vh;
+    right: 30px;
+  }
+}
